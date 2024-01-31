@@ -1,6 +1,6 @@
 # lista1 = [1, 2, 3, 4]
 # # tupla = (1, 2, 3, 4)
-# # print(*lista)
+# # print(*lista1)
 # # print(*tupla)
 
 # lista2 = [5, 6]
