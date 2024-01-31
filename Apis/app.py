@@ -13,18 +13,18 @@ if response.status_code == 200:
     name = data['name']
     height = data['height']
     weight = data['weight']
-    mensaje = f"""
-    id: {id}
-    name: {name}
-    height: {height}
-    weight: {weight}
-    """
-    print(mensaje)
+    # mensaje = f"""
+    # id: {id}
+    # name: {name}
+    # height: {height}
+    # weight: {weight}
+    # """
+    # print(mensaje)
 
-    # print(json.dumps(data, indent=2))
-    # for ability in data["abilities"]:
-    #     for clave, valor in ability.items():
-    #         print(f"{clave}: {valor}")
+    print(json.dumps(data, indent=2))
+    for ability in data["abilities"]:
+        for clave, valor in ability.items():
+            print(f"{clave}: {valor}")
 
 else:
     print('Error en la solicitud, detalles:', response.text)
