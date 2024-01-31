@@ -4,7 +4,7 @@ Esta aplicacion trata de utilizar una Api
 import requests
 
 URL = "https://jsonplaceholder.typicode.com/users/3"
-response = requests.get(URL)
+response = requests.get(URL, timeout=10)
 
 if response.status_code == 200:
     print('Solicitud exitosa')
