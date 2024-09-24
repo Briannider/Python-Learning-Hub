@@ -1,18 +1,20 @@
 """
 Esta aplicacion trata de utilizar una Api
 """
+
 import requests
 import json
+
 URL = "https://pokeapi.co/api/v2/pokemon/ditto"
 response = requests.get(URL, timeout=10)
 
 if response.status_code == 200:
-    print('Solicitud exitosa')
+    print("Solicitud exitosa")
     data = response.json()
-    id = data['id']
-    name = data['name']
-    height = data['height']
-    weight = data['weight']
+    id = data["id"]
+    name = data["name"]
+    height = data["height"]
+    weight = data["weight"]
     # mensaje = f"""
     # id: {id}
     # name: {name}
@@ -27,4 +29,4 @@ if response.status_code == 200:
             print(f"{clave}: {valor}")
 
 else:
-    print('Error en la solicitud, detalles:', response.text)
+    print("Error en la solicitud, detalles:", response.text)
