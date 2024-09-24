@@ -1,4 +1,4 @@
-resultado = input("Ingresa tu edad:")
+resultado = float(input("Ingresa tu peso con coma: "))
 print(type(resultado))
-numero = int(resultado)
-print(numero + 2)
+numero = resultado
+print(round(numero))
