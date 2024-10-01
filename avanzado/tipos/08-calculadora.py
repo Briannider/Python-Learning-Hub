@@ -10,7 +10,7 @@ pot = n1**n2
 mensaje = f"""
 Para los numeros {n1} y {n2}:
 la suma es = {suma}
-la resta es = {resta}2
+la resta es = {resta}
 la multiplicacion es = {multi}
 la division es = {div}
 la potencia es = {pot}

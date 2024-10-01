@@ -5,6 +5,6 @@ def largo(texto):
     return resultado
 
 
-print("chanchito")
+print("Hola mundo")
 tamaño = largo("Hola mundo")
 print(tamaño)
