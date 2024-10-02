@@ -6,19 +6,19 @@ la misma realiza una peticion GET a la url https://pokeapi.co/api/v2/pokemon/dit
 import requests
 
 # import json
-
+find = False
 URL = "https://pokeapi.co/api/v2/pokemon"
-response = requests.get(URL, timeout=10)
+poke_name = input("Ingresa el nombre del pokemon: ")
 
+response = requests.get(URL, timeout=10)
 if response.status_code == 200:
     print("Solicitud exitosa")
     data = response.json()
-    poke_name = input("Ingresa el nombre del pokemon: ")
-    find = False
-    for names in data["results"]:
-        if poke_name in names["name"]:
+
+    pokemon_list = data["results"]
+    for pokemon in pokemon_list:
+        if pokemon["name"] == poke_name:
             find = True
-            break
 
     if find:
         print(f"{poke_name} encontrado")
