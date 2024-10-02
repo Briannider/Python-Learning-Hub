@@ -13,8 +13,17 @@ response = requests.get(URL, timeout=10)
 if response.status_code == 200:
     print("Solicitud exitosa")
     data = response.json()
+    poke_name = input("Ingresa el nombre del pokemon: ")
+    find = False
     for names in data["results"]:
-        print(f"El nombre del pokemon es: {names["name"]}")
+        if poke_name in names["name"]:
+            find = True
+            break
+
+    if find:
+        print(f"{poke_name} encontrado")
+    else:
+        print(f"{poke_name} no encontrado")
 
 else:
     print("Error en la solicitud, detalles:", response.text)
