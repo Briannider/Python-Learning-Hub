@@ -13,5 +13,7 @@ response = requests.get(URL, timeout=10)
 if response.status_code == 200:
     print("Solicitud exitosa")
     data = response.json()
+    print(data.get("abilities"))
 else:
     print("Error en la solicitud, detalles:", response.text)
+    print("Status:", response.status_code)
