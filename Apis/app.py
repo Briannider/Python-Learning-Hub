@@ -7,13 +7,15 @@ import requests
 
 # import json
 
-URL = "https://pokeapi.co/api/v2/pokemon/ditto"
+URL = "https://pokeapi.co/api/v2/pokemon"
 response = requests.get(URL, timeout=10)
 
 if response.status_code == 200:
     print("Solicitud exitosa")
     data = response.json()
-    print(data.get("abilities"))
+    for names in data["results"]:
+        print(f"El nombre del pokemon es: {names["name"]}")
+
 else:
     print("Error en la solicitud, detalles:", response.text)
     print("Status:", response.status_code)
