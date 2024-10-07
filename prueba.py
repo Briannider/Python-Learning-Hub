@@ -8,7 +8,7 @@
 # print("El total a pagar es de: $" + str(total))
 
 
-# * ConsignaContar la frecuencia de palabras en una lista dada
+# * Consigna Contar la frecuencia de palabras en una lista dada
 my_list = [
     "Casa",
     "Perro",
