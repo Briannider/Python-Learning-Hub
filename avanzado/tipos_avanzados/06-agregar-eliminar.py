@@ -1,11 +1,4 @@
-mascotas = [
-    "Wolfgang",
-    "Pelusa",
-    "Pulga",
-    "Felipe",
-    "Pulga",
-    "Chanchito feliz"
-]
+mascotas = ["Wolfgang", "Pelusa", "Pulga", "Felipe", "Pulga", "Rinoceronte"]
 
 mascotas.insert(1, "Melvin")  # => Inserta el elemento sin eliminar en la lista
 # => Agrega un elemento al final de la lista
