@@ -1,10 +1,10 @@
 puntaje = 49
 
-if puntaje >= 95 :
-    print("Aprobado con honores")
-elif puntaje >= 50 : 
+if puntaje < 50:
+    print("Reprobado")
+elif puntaje < 95:
     print("Aprobado")
 else:
-    print("Reprobado")
+    print("Aprobado con honores")
 
 print("Fuera del if")
