@@ -21,3 +21,6 @@ def count(sentence):
 sentence = input("Enter a sentence: ")
 wordcount = count(sentence)
 print(f"List of words: {wordcount}")
+print(
+    f"List of words sorted by frequency: {sorted(wordcount.items(), key=lambda item: item[1], reverse=True)}"
+)
