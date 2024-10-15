@@ -28,9 +28,6 @@ Program Requirements:
    - Calculation: (4 + 0 + 6 + 8 + 1 + 3) + (0 + 6 + 3 + 3 + 3 + 9) * 3 = 22 + 72 = 94
    - Check digit: (94 + 6 = 100), so the code is valid.
    - Output: `"Valid barcode"`
-
----
-This exercise will help you practice string manipulation, validation, and basic arithmetic operations in Python.
 """
 
 
