@@ -50,7 +50,7 @@ def codechecker(barcode: str) -> bool:
 
     # Calculate the check digit
     check_calculated = (10 - (result % 10)) % 10
-
+    print(f"Calculated check digit: {check_calculated} (from result: {result})")
     # Compare the calculated check digit with the actual check digit
     return check_calculated == check
 
