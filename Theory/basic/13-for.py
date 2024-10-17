@@ -1,5 +1,16 @@
-lenguajes = ["Python", "Ruby", "PHP", "C++", "C", "Javascript", "Java"]
+"""
+Traversing a list using a for loop.
 
-# Mas eficiente que un bucle while para recorrer listas
-for lenguajes in lenguajes:
-    print(lenguajes)
+A for loop is more efficient than a while loop for traversing lists
+because it automatically stops when it reaches the end of the list.
+
+"""
+
+languages = ["Python", "Ruby", "PHP", "C++", "C", "Javascript", "Java"]
+
+# Print each language in the list
+for language in languages:
+    """
+    This will print each language in the list
+    """
+    print(language)

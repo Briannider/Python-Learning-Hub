@@ -1,10 +1,20 @@
-puntaje = 49
+# This program checks the score of a test and prints out if it is a pass or a fail
 
-if puntaje < 50:
-    print("Reprobado")
-elif puntaje < 95:
-    print("Aprobado")
+# The score of the test
+score = 49
+
+# Check if the score is lower than 50
+if score < 50:
+    # Print out that the test was failed
+    print("Failed")
+# Check if the score is lower than 95
+elif score < 95:
+    # Print out that the test was passed
+    print("Passed")
+# If the score is higher than 95
 else:
-    print("Aprobado con honores")
+    # Print out that the test was passed with honors
+    print("Passed with honors")
 
-print("Fuera del if")
+# Print out that we are outside of the if
+print("Outside the if")
