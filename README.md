@@ -1,44 +1,43 @@
 # Python Basics Repository
 
-Este repositorio proporciona información y ejemplos prácticos sobre los conceptos fundamentales de Python. Es una excelente referencia para principiantes que desean aprender la sintaxis y las características esenciales del lenguaje de programación Python.
+This repository provides information and practical examples of fundamental Python concepts. It is an excellent reference for beginners who want to learn the syntax and core features of the Python programming language.
 
-## Contenido
+## Contents
 
-1. [Introducción](#introducción)
-2. [Estructura del Repositorio](#estructura-del-repositorio)
-3. [Conceptos Cubiertos](#conceptos-cubiertos)
-4. [Cómo Usar Este Repositorio](#cómo-usar-este-repositorio)
-5. [Contribuciones](#contribuciones)
-6. [Licencia](#licencia)
+1. [Introduction](#introduction)
+2. [Repository Structure](#repository-structure)
+3. [Concepts Covered](#concepts-covered)
+4. [How to Use This Repository](#how-to-use-this-repository)
+5. [Contributions](#contributions)
+6. [License](#license)
 
-## Introducción
+## Introduction
 
-Python es un lenguaje de programación de alto nivel conocido por su sintaxis clara y legible. Este repositorio se centra en proporcionar una base sólida para aquellos que quieren aprender Python, desde los conceptos básicos hasta temas más avanzados.
+Python is a high-level programming language known for its clear and readable syntax. This repository aims to provide a solid foundation for those who want to learn Python, from basic concepts to more advanced topics.
 
-## Estructura del Repositorio
+## Repository Structure
 
-- 📁 **code_examples**: Contiene ejemplos de código organizados por concepto.
-- 📄 **docs**: Documentación adicional sobre conceptos específicos y ejemplos detallados.
-- 📄 **resources**: Recursos adicionales, como enlaces a tutoriales, libros y sitios web útiles.
+- 📁 **code_examples**: Contains code examples organized by concept.
+- 📄 **docs**: Additional documentation on specific concepts and detailed examples.
+- 📄 **resources**: Extra resources, such as links to tutorials, books, and helpful websites.
 
-## Conceptos Cubiertos
+## Concepts Covered
 
-- Variables y Tipos de Datos
-- Estructuras de Control (if, else, while, for)
-- Funciones y Métodos
-- Listas, Tuplas y Diccionarios
+- Variables and Data Types
+- Control Structures (if, else, while, for)
+- Functions and Methods
+- Lists, Tuples, and Dictionaries
 
-## Cómo Usar Este Repositorio
+## How to Use This Repository
 
-1. 📋 Explora el contenido en `code_examples` para ver ejemplos prácticos.
-2. 📚 Consulta la carpeta `docs` para obtener información detallada sobre conceptos específicos.
-3. 🌐 Explora los recursos adicionales en `resources` para profundizar en tus estudios.
+1. 📋 Explore the `code_examples` folder to see practical examples.
+2. 📚 Refer to the `docs` folder for detailed information on specific concepts.
+3. 🌐 Check out the additional resources in the `resources` folder to deepen your studies.
 
-## Contribuciones
+## Contributions
 
-¡Las contribuciones son bienvenidas! Si encuentras errores, quieres agregar más ejemplos o expandir la documentación, por favor [abre un problema](https://github.com/tu-usuario/python-basics/issues) o envía una solicitud de extracción.
+Contributions are welcome! If you find errors, want to add more examples, or expand the documentation, please [open an issue](https://github.com/your-username/python-basics/issues) or submit a pull request.
 
-## Licencia
+## License
 
-Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
-```
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
