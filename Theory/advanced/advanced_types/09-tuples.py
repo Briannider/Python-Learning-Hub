@@ -1,32 +1,32 @@
-# Tuplas son inmutables, no se pueden cambiar luego de ser creadas
-# Se pueden concatenar
-numeros = (1, 2, 3) + (4, 5, 6)
-print(numeros)
+# Tuples are immutable, meaning they cannot be changed after creation
+numbers_tuple = (1, 2, 3) + (4, 5, 6)  # Concatenating tuples
 
-# Se puede crear una tupla a partir de una lista
-punto = tuple([1, 2])
-print(punto)
+# Tuples can also be created from other iterable types like lists
+point = tuple([1, 2])
 
-# Se puede desempaquetar una tupla en variables
-menosNumeros = numeros[:2]
-print(menosNumeros)
+# Tuples support slicing, which can create a new tuple
+fewer_numbers = numbers_tuple[:2]
 
-# Se puede desempaquetar una tupla en variables con el *
+# Tuple unpacking allows us to assign multiple variables at once
+first, second, *others = numbers_tuple
 
-primero, segundo, *otros = numeros
-print(primero, segundo, otros)
-
-# Se puede iterar sobre una tupla
-for n in numeros:
+# Tuples can be iterated over using a simple loop
+for n in numbers_tuple:
     print(n)
 
-# Se puede convertir una tupla en una lista
-listaNumeros = list(numeros)
-# Y se puede cambiar
-listaNumeros[0] = "Chanchito Feliz"
-print(listaNumeros)
+# Convert tuple to a list to make it mutable (changeable)
+list_numbers = list(numbers_tuple)
 
-# ? Unpacking Tupla (Desempaquetar Tupla) esto lo que hace es desempaquetar una tupla en variables individuales
+# Once converted to a list, we can modify elements
+# list_numbers[0] = "Happy"  # Example of modification
+
+# Tuple unpacking: assigning values from the tuple to variables in one line
 tupla = (1, 2, 3)
 a, b, c = tupla
-print(a, b, c)
+
+# Extra: demonstrating tuple immutability
+# Trying to modify an element in a tuple will result in an error
+try:
+    numbers_tuple[0] = 10  # This will raise a TypeError
+except TypeError:
+    print("Tuples are immutable and cannot be modified.")

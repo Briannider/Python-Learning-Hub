@@ -1,24 +1,24 @@
-usuarios = [
-    ["Chanchito", 4],
-    ["Felipe", 1],
-    ["Pulga", 5]
-]
+# List comprehension is a powerful tool for creating lists in a concise manner.
+# It can be used for mapping, filtering and transforming lists.
+users = [["Little pig", 4], ["Felipe", 1], ["Flea", 5]]
 
-# nombres = []
-# for usuario in usuarios:
-#     nombres.append(usuario[0])
-#     print(nombres)
+# Mapping - Transform
+# This code creates a new list with the names of the users.
+names = [user[0] for user in users]
 
-# Transformar - Map
-# nombres = [usuario[0] for usuario in usuarios]
+# Filtering - Filter
+# This code creates a new list with the names of the users that have a value greater than 2.
+names = [user for user in users if user[1] > 2]
 
-# Filtrar - Filter
-# nombres = [usuario for usuario in usuarios if usuario[1] > 2]
+# Transforming and Filtering - Map and Filter
+# This code creates a new list with the names of the users that have a value greater than 2.
+names = [user[0] for user in users if user[1] > 2]
 
-# Transformar y Filtrar -
-# nombres = [usuario[0] for usuario in usuarios if usuario[1] > 2]
+# Using the map function
+# This code creates a new list with the names of the users.
+names = list(map(lambda user: user[0], users))
 
-# nombres = list(map(lambda usuario: usuario[0], usuarios))
-
-menosUsuarios = list(filter(lambda usuario: usuario[1] > 2, usuarios))
-print(menosUsuarios)
+# Using the filter function
+# This code creates a new list with the names of the users that have a value greater than 2.
+fewerUsers = list(filter(lambda user: user[1] > 2, users))
+print(fewerUsers)

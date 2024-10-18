@@ -1,18 +1,18 @@
-numeros = [2, 46, 51, 65, 74, 82, 17]
+"""
+This script demonstrates sorting lists in Python using both the sort method and the sorted function.
+"""
 
-# numeros.sort()  # Ordena la lista
-# numeros.sort(reverse=True)  # Ordena la lista
-numeros2 = sorted(numeros, reverse=True)  # => Nueva lista
-print(numeros)
-print(numeros2)
+# List of numbers
+numbers = [2, 46, 51, 65, 74, 82, 17]
 
-usuarios = [
-    ["Chanchito", 4],
-    ["Felipe", 1],
-    ["Pulga", 5]
-]
+# Sort the list in reverse order and create a new list
+numbers2 = sorted(numbers, reverse=True)
+print(numbers)  # Original list remains unchanged
+print(numbers2)  # New sorted list
 
+# List of users with a name and a numerical value
+users = [["Little pig", 4], ["Felipe", 1], ["Flea", 5]]
 
-# => Las funciones lambda son funciones como ternarias
-usuarios.sort(key=lambda el: el[1])
-print(usuarios)
+# Sort the list of users based on the second element of each sublist (the numerical value)
+users.sort(key=lambda el: el[1])
+print(users)  # Users list sorted by their numerical value
