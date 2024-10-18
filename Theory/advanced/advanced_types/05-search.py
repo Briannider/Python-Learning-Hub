@@ -1,10 +1,20 @@
-mascotas = ["Pelusa", "Pulga", "Wolfgang",
-            "Felipe", "Chanchito Feliz", "Wolfgang"]
+pets = ["Pelusa", "Pulga", "Wolfgang", "Felipe", "Chanchito Feliz", "Wolfgang"]
 
-# => Busca el indice en la lista del elemento
-# print(mascotas.index("Chanchito Feliz"))
+"""
+Checks if the element is in the list and returns its index
+"""
+# print(pets.index("Chanchito Feliz"))
 
 
-print(mascotas.count("Wolfgang"))
-if "Wolfgang" in mascotas:
-    print(mascotas.index("Wolfgang"))  # => Si no la encuentra muestra un error
+"""
+Counts the number of occurrences of the element in the list
+"""
+print(pets.count("Wolfgang"))
+
+
+"""
+Checks if the element is in the list and returns its index
+If the element is not in the list, it raises a ValueError
+"""
+if "Wolfgang" in pets:
+    print(pets.index("Wolfgang"))

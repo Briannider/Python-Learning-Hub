@@ -1,10 +1,19 @@
-numeros = [1, 2, 3]
+# Unpacking lists
+# =================
 
-# Esto es horrible:
-# primero = numeros [0]
-# segundo = numeros [1]
-# tercero = numeros [2]
+# A terrible way to unpack a list:
+numbers = [1, 2, 3]
 
-numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-primero, segundo, *otros, penultimo, ultimo = numeros
-print(primero, segundo, penultimo, ultimo, otros)
+# This is terrible:
+first = numbers[0]
+second = numbers[1]
+third = numbers[2]
+
+# A better way to unpack a list:
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+# Unpack the list into variables
+first, second, *others, second_to_last, last = numbers
+
+# Print the unpacked variables
+print(first, second, second_to_last, last, others)
