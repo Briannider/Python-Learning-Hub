@@ -1,9 +1,9 @@
-pets = ["Pelusa", "Pulga", "Wolfgang", "Felipe", "Chanchito Feliz", "Wolfgang"]
+pets = ["Fluff", "Flea", "Wolfgang", "Felipe", "Happy little pig", "Wolfgang"]
 
 """
 Checks if the element is in the list and returns its index
 """
-# print(pets.index("Chanchito Feliz"))
+print(pets.index("Happy little pig"))
 
 
 """
