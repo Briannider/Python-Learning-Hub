@@ -21,8 +21,8 @@ list_numbers = list(numbers_tuple)
 # list_numbers[0] = "Happy"  # Example of modification
 
 # Tuple unpacking: assigning values from the tuple to variables in one line
-tupla = (1, 2, 3)
-a, b, c = tupla
+tuple = (1, 2, 3)
+a, b, c = tuple
 
 # Extra: demonstrating tuple immutability
 # Trying to modify an element in a tuple will result in an error

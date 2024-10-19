@@ -1,11 +1,23 @@
-# set significa grupo o conjunto
-primer = {1, 1, 2, 2, 3, 4}
-segundo = [3, 4, 5]
-segundo = set(segundo)
+# set means group or set
+"""
+This code demonstrates the use of sets in Python.
+It includes examples of the union, intersection, difference, and symmetric difference of sets.
+"""
 
-print(primer | segundo)  # Union de sets
-print(primer & segundo)  # Interseccion de sets
-print(primer - segundo)  # Diferencia de sets
-print(primer ^ segundo)  # Diferencia simetrica de sets
+first = {1, 1, 2, 2, 3, 4}
+second = [3, 4, 5]
+second = set(second)
 
-# Los sets estan desordenados y no es posible acceder por indice a los mismos
+# Union of sets
+print(first | second)  # {1, 2, 3, 4, 5}
+
+# Intersection of sets
+print(first & second)  # {3, 4}
+
+# Set difference
+print(first - second)  # {1, 2}
+
+# Symmetric difference of sets
+print(first ^ second)  # {1, 2, 5}
+
+# Sets are unordered and cannot be accessed by index
