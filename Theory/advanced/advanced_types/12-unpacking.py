@@ -1,16 +1,28 @@
-# lista1 = [1, 2, 3, 4]
-# # tupla = (1, 2, 3, 4)
-# # print(*lista1)
-# # print(*tupla)
+# Unpacking Lists and Tuples
+# ===========================
 
-# lista2 = [5, 6]
+# Unpacking a list
+list1 = [1, 2, 3, 4]
+# Unpacking a tuple
+tuple1 = (1, 2, 3, 4)
 
-# combinada = ["Hola", *lista1, *lista2, "chanchito"]
-# print(combinada)
+# Print the unpacked lists and tuples
+print(*list1)
+print(*tuple1)
 
 
-punto1 = {"x": 19, "y": "Hola"}
-punto2 = {"y": 15}
+# Unpacking Multiple Lists
+list2 = [5, 6]
 
-nuevoPunto = {**punto1, "lala": "Hola mundo", **punto2, "z": "mundo"}
-print(nuevoPunto)
+# Combine the lists
+combined = ["Hello", *list1, *list2, "piglet"]
+print(combined)
+
+
+# Unpacking Dictionaries
+point1 = {"x": 19, "y": "Hello"}
+point2 = {"y": 15}
+
+# Combine the dictionaries
+newPoint = {**point1, "lala": "Hello world", **point2, "z": "world"}
+print(newPoint)

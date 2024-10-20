@@ -1,47 +1,69 @@
-# Son sumamente utilizados ya que las bases de datos retornan valores asi
-# Lo de la izquierda si o si es un string y lo de la derecha cualquier cosa
-punto = {"x": 25, "y": 50}
+# Dictionaries are highly used because databases return values like this
+# The left side must be a string and the right side can be anything
+point = {"x": 25, "y": 50}
 
-print(punto)
-print(punto["x"])
-print(punto["y"])
+# Print the dictionary
+print(point)
 
-punto["z"] = 45
-# print(punto, punto["lala"])
-if "lala" in punto:
-    print("Encontre lala ", punto["lala"])
+# Print the value of the key "x"
+print(point["x"])
 
+# Print the value of the key "y"
+print(point["y"])
 
-print(punto.get("x"))
-print(punto.get("lala", 97))
-del punto["x"]
-del (punto["y"])
+# Add a new key-value pair to the dictionary
+point["z"] = 45
 
+# Check if the key "lala" is in the dictionary
+if "lala" in point:
+    # Print the value of the key "lala" if it exists
+    print("I found lala ", point["lala"])
 
-print(punto)
-punto["x"] = 25
+# Get the value of the key "x" using the get() method
+print(point.get("x"))
 
-for valor in punto:
-    print(valor, punto[valor])
+# Get the value of the key "lala" using the get() method
+# If the key doesn't exist, return 97 as the default value
+print(point.get("lala", 97))
 
+# Delete the key "x" from the dictionary
+del point["x"]
 
-for valor in punto.items():
-    print(valor)
+# Delete the key "y" from the dictionary
+del point["y"]
 
+# Print the dictionary after deleting the keys
+print(point)
 
-for llave, valor in punto.items():
-    print(llave, valor)
+# Add a new key-value pair to the dictionary
+point["x"] = 25
 
+# Iterate over the keys in the dictionary
+for value in point:
+    # Print the key and value
+    print(value, point[value])
 
-usuarios = [
-    {"id": 1, "nombre": "Chanchito"},
-    {"id": 2, "nombre": "Feliz"},
-    {"id": 3, "nombre": "Nico"},
-    {"id": 4, "nombre": "Brian"},
-    {"id": 5, "nombre": "Rodrigo"},
-    {"id": 6, "nombre": "Gonza"},
+# Iterate over the key-value pairs in the dictionary
+for value in point.items():
+    # Print the key and value
+    print(value)
+
+# Iterate over the key-value pairs in the dictionary
+for key, value in point.items():
+    # Print the key and value
+    print(key, value)
+
+# Create a list of dictionaries
+users = [
+    {"id": 1, "name": "Little pig"},
+    {"id": 2, "name": "Happy"},
+    {"id": 3, "name": "Nico"},
+    {"id": 4, "name": "Brian"},
+    {"id": 5, "name": "Rodrigo"},
+    {"id": 6, "name": "Gonza"},
 ]
 
-
-for usuario in usuarios:
-    print(usuario["nombre"])
+# Iterate over the list of dictionaries
+for user in users:
+    # Print the value of the key "name"
+    print(user["name"])
