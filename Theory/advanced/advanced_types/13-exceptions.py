@@ -19,12 +19,12 @@ try:
     if scale == "C":
         # Convert Celsius to Fahrenheit
         fahrenheit = (temperature * 1.8) + 32
-        print("The temperature in Fahrenheit is: ", fahrenheit)
+        print("The temperature in Fahrenheit is: ", round(fahrenheit))
     # Check if the scale is Fahrenheit
     elif scale == "F":
         # Convert Fahrenheit to Celsius
         celsius = (temperature - 32) * 5 / 9
-        print("The temperature in Celsius is: ", celsius)
+        print("The temperature in Celsius is: ", round(celsius, 2))
     else:
         # Handle invalid scale input
         print("Dude, choose one of the two, not anything")
