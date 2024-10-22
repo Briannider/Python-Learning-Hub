@@ -1,7 +1,17 @@
-numero1 = 10
-numero2 = 10
+# Comparators in Python
 
-print(2 == 2)
-print(2 <= 2)
-print(2 >= 2)
-print(2 != 2)
+# Define two numbers
+number1 = 10
+number2 = 10
+
+# Check if the numbers are equal
+print(number1 == number2)  # True
+
+# Check if the first number is less than or equal to the second
+print(number1 <= number2)  # True
+
+# Check if the first number is greater than or equal to the second
+print(number1 >= number2)  # True
+
+# Check if the first number is not equal to the second
+print(number1 != number2)  # False
