@@ -1,6 +1,10 @@
-for j in range(3):
-    for k in range(2):
-        print(f"{j}, {k}")
+# Nested Loops
+# =================
+# It is not advisable to use it as the first option for solving an algorithmic problem.
 
-# No es recomendable utilizarlo como primera opcion en la resolucion de un
-# problema algoritmico.
+# Loop through the outer loop three times
+for j in range(3):
+    # Loop through the inner loop two times
+    for k in range(2):
+        # Print the values of j and k
+        print(f"{j}, {k}")

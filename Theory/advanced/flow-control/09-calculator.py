@@ -1,68 +1,35 @@
+# Welcome the user to the calculator program
+print("Welcome to the calculator")
+print("The operations are as follows: (add, subtract, divide, multiply)")
+print("To exit, type (exit)")
 
-# Mi manera de hacerlo:
+# Prompt the user to enter an operation and convert it to lowercase
+operation = input("Enter the operation to execute: ").lower()
 
-# print("Bienvenido a la calculadora")
-# print("Las operaciones son las siguientes: (suma, resta, div, multi)")
-# print("Para salir escribe (salir)")
+# Start a loop that continues until the user types "exit"
+while operation != "exit":
+    # Get the first and second numbers from the user
+    n1 = int(input("Enter the first number: "))
+    n2 = int(input("Enter the second number: "))
 
-# operacion = input("ingrese la operacion a ejecutar: ").lower()
-
-# while operacion != "salir":
-#     n1 = int(input("Ingrese el primer numero: "))
-#     n2 = int(input("Ingrese el segundo numero: "))
-
-#     if operacion == "suma":
-#         mensaje = f"El resultado es: {n1+n2} "
-#         print(mensaje)
-#     elif operacion == "resta":
-#         mensaje = f"El resultado es:  {
-#             n1-n2}" if n1 >= n2 else f"El resultado de {n2} - {n1} = {n2-n1}"
-#         print(mensaje)
-#     elif operacion == "div":
-#         mensaje = f"El resultado es: {n1/n2}"
-#         print(mensaje)
-#     elif operacion == "multi":
-#         mensaje = f"El resultado es: {n1*n2}"
-#         print(mensaje)
-#     else:
-#         mensaje = f"La operacion {operacion} no existe"
-#         print(mensaje)
-#         print("Las operaciones son las siguientes: (suma, resta, div, multi)")
-
-#     operacion = input("ingrese la operacion a ejecutar: ")
-
-
-# La manera de HolaMundo de hacerlo:
-
-print("Bienvenidos a la calculadora")
-print("Para salir escribe (salir)")
-print("Las operaciones son las siguientes: (suma, resta, div, multi)")
-
-resultado = ""
-while True:
-    if not resultado:
-        resultado = input("Ingrese numero")
-        if resultado.lower() == "salir":
-            break
-        resultado = int(resultado)
-    op = input("Ingrese operacion: ")
-    if op.lower() == "salir":
-        break
-    n2 = input("Ingresa siguiente numero: ")
-    if n2.lower() == "salir":
-        break
-    n2 = int(n2)
-
-    if op.lower() == "suma":
-        resultado += n2
-    elif op.lower() == "resta":
-        resultado -= n2
-    elif op.lower() == "multi":
-        resultado *= n2
-    elif op.lower() == "div":
-        resultado /= n2
+    # Perform the operation based on user input
+    if operation == "add":
+        message = f"The result is: {n1 + n2}"
+    elif operation == "subtract":
+        message = f"The result is: {n1 - n2}"
+    elif operation == "divide":
+        # Check for division by zero
+        if n2 == 0:
+            message = "Division by zero is undefined"
+        else:
+            message = f"The result is: {n1 / n2}"
+    elif operation == "multiply":
+        message = f"The result is: {n1 * n2}"
     else:
-        print("Operacion invalida")
-        break
+        message = f"The operation {operation} does not exist"
+        print("The operations are as follows: (add, subtract, divide, multiply)")
 
-    print(f"El resultado es {resultado}")
+    # Print the result message
+    print(message)
+    # Prompt the user to enter another operation or exit
+    operation = input("Enter the operation to execute: ").lower()

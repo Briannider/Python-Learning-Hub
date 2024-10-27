@@ -1,17 +1,17 @@
-# numero = 1
-# while numero < 100:
-#     print(numero)
-#     numero *= 2
+# number = 1
+# while number < 100:
+#     print(number)
+#     number *= 2
 
-# comando = ""
+# command = ""
 
-# while comando.lower() != "salir":
-#     comando = input("$ ")
-#     print(comando)
+# while command.lower() != "exit":
+#     command = input("$ ")
+#     print(command)
 
 
 while True:
-    comando = input("$ ")
-    print(comando)
-    if comando.lower() == "salir":
+    command = input("$ ")
+    print(command)
+    if command.lower() == "exit":
         break
