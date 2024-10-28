@@ -1,19 +1,17 @@
-# def saludar(nombre, apellido):  # (nombre, apellido) => parametros "Ya que son definidos en la funcion"
-#     print("Hola Mundo!")
-#     print(f"Bienvenido {nombre} {apellido}")
+def greet(name, surname="Happy"):
+    """
+    Greets a user with a welcome message.
+
+    Parameters:
+    name (str): The first name of the user.
+    surname (str): The surname of the user. Defaults to 'Happy'.
+    """
+    print("Hello World!")
+    print(f"Welcome {name} {surname}")
 
 
-# # ("Brian", "Niderhaus") => argumentos "Ya que son las variables pasadas como argumentos a la funcion"
-# saludar("Brian", "Niderhaus")
+# Call the greet function with only the name argument
+greet("Brian")
 
-
-# Hacer que la funcion tome valores por defecto como argumento
-def saludar(nombre, apellido="Feliz"):  # Lo definimos previamente => haciendo apellido="Feliz"
-    print("Hola Mundo!")
-    print(f"Bienvenido {nombre} {apellido}")
-
-
-saludar("Brian", )
-
-# Pasar argumentos desordenados (Si o si hay que seguir la sintaxis)
-saludar(apellido="Niderhaus", nombre="Brian")
+# Call the greet function with unordered arguments
+greet(surname="Niderhaus", name="Brian")
