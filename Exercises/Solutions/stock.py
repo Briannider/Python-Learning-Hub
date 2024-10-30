@@ -1,3 +1,16 @@
+"""
+A dictionary to store the video game stock.
+
+The keys are the names of the video games and the values are dictionaries
+with the following keys:
+
+- price: an integer representing the price of the video game.
+- quantity: an integer representing the quantity of the video game.
+- category: a string representing the category of the video game.
+- platforms: a list of strings representing the platforms on which the
+  video game is available.
+"""
+
 stock = {
     "Minecraft": {
         "price": 40,
@@ -68,5 +81,24 @@ def remove_video_game(name):
     if name in stock:
         del stock[name]
         print(f"Removed {name} from the stock.")
+    else:
+        print(f"{name} doesn't exist in the stock.")
+
+
+def update_video_game(name, price, quantity, category):
+    """
+    Updates the stock of the video game with the given name.
+
+    It checks if the video game exists in the stock and prints a message
+    accordingly.
+    """
+    if name in stock:
+        updated_game = {
+            "price": price,
+            "quantity": quantity,
+            "category": category,
+            "platforms": [],
+        }
+        stock[name] = updated_game
     else:
         print(f"{name} doesn't exist in the stock.")
