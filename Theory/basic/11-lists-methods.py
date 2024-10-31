@@ -1,16 +1,15 @@
-lenguajes = ["Python", "Ruby", "PHP", "Javascript", "Java"]
-lenguajes.insert(3,"C++")
-lenguajes.insert(0,"C")
-lenguajes.remove("Ruby")
-print(lenguajes.pop(1))
+languages = ["Python", "Ruby", "PHP", "Javascript", "Java"]
+languages.insert(3, "C++")
+languages.insert(0, "C")
+languages.remove("Ruby")
+print(languages.pop(1))
 
-# Busqueda de elementos en una lista
-if "Ruby" in lenguajes :
-    print("Si existe amigote 😁")
-else :
-    print("Tu busqueda no existe 🥺")
+# Search for elements in a list
+if "Ruby" in languages:
+    print("Yes, it exists! 😁")
+else:
+    print("Your search does not exist 🥺")
 
-print(len(lenguajes))
-# El metodo clear limpia toda la lista
-# lenguajes.clear()
-
+print(len(languages))
+# The clear method clears the entire list
+# languages.clear()
