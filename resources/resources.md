@@ -13,4 +13,4 @@
 
 ## Additionally, my own Wiki on Notion:
 
-11. **Python (Notion)**: [Python English](https://www.notion.so/Python-English-131638e786a980f6bb99e639e024aa2e?pvs=4)
+11. **Python (Notion)**: [Python](https://www.notion.so/Python-English-131638e786a980f6bb99e639e024aa2e?pvs=4)
