@@ -11,6 +11,6 @@
 9. **Kaggle Python Course**: [kaggle.com/learn/python](https://www.kaggle.com/learn/python)
 10. **Automate the Boring Stuff with Python**: [automatetheboringstuff.com](https://automatetheboringstuff.com/)
 
-## Additionally, my own Wiki on Notion:
+## I have also created a personal Wiki on Notion for organization and reference:
 
 11. **Python (Notion)**: [Python](https://www.notion.so/Python-English-131638e786a980f6bb99e639e024aa2e?pvs=4)
