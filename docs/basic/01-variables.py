@@ -10,7 +10,7 @@ In this example, we will declare 5 variables: a string, an integer, a float, a b
 """
 
 # String
-greeting = "Hola Mundo"  # This is a string
+greeting = "Hello World"  # This is a string
 
 # Integer
 number = 22  # This is an integer
