@@ -63,10 +63,8 @@ stock = {
 }
 
 
-def add_video_game(name, price: int, quantity: int, category, platforms):
-    """
-    Adds a new video game to the stock with the given name, price, quantity, and category.
-    """
+def add_video_game(name, price, quantity, category, platforms):
+    """Adds a new video game to the stock with the given name, price, quantity, and category."""
     new_game = {
         "price": price,
         "quantity": quantity,
@@ -76,7 +74,8 @@ def add_video_game(name, price: int, quantity: int, category, platforms):
     stock[name] = new_game
 
 
-def show_full_stock(stock):
+def show_stock():
+    """Prints the full stock."""
     for video_game, details in stock.items():
         print(f"Name: {video_game}")
         print(f"Price: {details['price']}")
@@ -86,7 +85,8 @@ def show_full_stock(stock):
         print()
 
 
-def check_product(name, stock):
+def check_product(name):
+    """Checks if a video game exists in the stock."""
     if name in stock:
         print(f"Name: {name}")
         print(f"Price: {stock[name]['price']}")
@@ -107,12 +107,7 @@ def remove_video_game(name):
 
 
 def update_video_game(name, price, quantity, category):
-    """
-    Updates the stock of the video game with the given name.
-
-    It checks if the video game exists in the stock and prints a message
-    accordingly.
-    """
+    """Updates the stock of the video game with the given name."""
     if name in stock:
         updated_game = {
             "price": price,
@@ -126,19 +121,14 @@ def update_video_game(name, price, quantity, category):
 
 
 def low_stock():
+    """Prints video games with low quantity."""
     for video_game in stock:
         if stock[video_game]["quantity"] < 5:
             print(f"{video_game} is low in stock.")
 
 
 def show_menu():
-    """
-    Displays the main menu and handles user input.
-
-    The function presents a menu with options for managing products.
-    It continuously prompts the user to select an option until the user chooses to exit.
-    The corresponding function is called based on the user's selection.
-    """
+    """Displays the main menu and handles user input."""
     while True:
         # Print the main menu options
         print("========== MAIN MENU (Product Management) ==========")
@@ -165,18 +155,16 @@ def show_menu():
             ).split(",")
             add_video_game(name, price, quantity, category, platforms)
         elif option == 2:
-            # Prompt user for the game name to search
             game_name = input("Enter the name of the game your searchin for: ")
-            check_product(game_name, stock)
-        # Uncomment and implement the following options as needed
-        # elif option == 3:
-        #     modify_stock(games_list)
-        # elif option == 4:
-        #     remove_product(games_list)
-        elif option == 5:
-            show_full_stock(stock)
-        # elif option == 6:
-        #     show_low_quantity(games_list)
+            check_product(game_name)
+        elif option == 3:
+            # modify_stock(stock)
+            # elif option == 4:
+            # remove_product(stock)
+            # elif option == 5:
+            show_stock()
+        elif option == 6:
+            low_stock()
         elif option == 7:
             break  # Exit the menu loop
         else:
