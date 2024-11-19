@@ -106,6 +106,15 @@ def remove_video_game(name):
         print(f"{name} doesn't exist in the stock.")
 
 
+def modify_stock(name, quantity):
+    """Modifies the stock quantity of a video game."""
+    if name in stock:
+        stock[name]["quantity"] += quantity
+        print(f"Updated stock quantity for {name}: {stock[name]['quantity']}")
+    else:
+        print(f"{name} doesn't exist in the stock.")
+
+
 def update_video_game(name, price, quantity, category):
     """Updates the stock of the video game with the given name."""
     if name in stock:
@@ -116,6 +125,16 @@ def update_video_game(name, price, quantity, category):
             "platforms": [],
         }
         stock[name] = updated_game
+    else:
+        print(f"{name} doesn't exist in the stock.")
+
+
+def remove_product(stock):
+    """Removes a product from the stock."""
+    name = input("Enter the name of the product you want to remove: ")
+    if name in stock:
+        del stock[name]
+        print(f"Removed {name} from the stock.")
     else:
         print(f"{name} doesn't exist in the stock.")
 
@@ -158,9 +177,9 @@ def show_menu():
             game_name = input("Enter the name of the game your searchin for: ")
             check_product(game_name)
         elif option == 3:
-            # modify_stock(stock)
-            # elif option == 4:
-            # remove_product(stock)
+            modify_stock(stock)
+        elif option == 4:
+            remove_product(stock)
             # elif option == 5:
             show_stock()
         elif option == 6:
