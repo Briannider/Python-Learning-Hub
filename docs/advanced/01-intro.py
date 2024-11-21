@@ -1,5 +1,5 @@
 """
-Introduccion a Python!
+Introduction to Python!
 """
-print("Hola Mundo!")
-print("El weta" * 4)
+print("Hello World!")
+print("Python" * 4)
