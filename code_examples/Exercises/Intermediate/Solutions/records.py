@@ -28,6 +28,12 @@ employees = {
         "position": "Designer",
         "projects": [],
     },
+    "E004": {
+        "name": "Dave",
+        "department": "Sales",
+        "position": "Salesperson",
+        "projects": [],
+    },
 }
 
 
