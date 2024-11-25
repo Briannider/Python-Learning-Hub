@@ -11,6 +11,7 @@ You work at a tech company, and your task is to create a system to manage employ
        "E001": {"name": "Alice", "department": "Engineering", "position": "Developer", "projects": ["Website", "App"]},
        "E002": {"name": "Bob", "department": "Marketing", "position": "Manager", "projects": ["Campaign A"]},
        "E003": {"name": "Carol", "department": "Engineering", "position": "Designer", "projects": []},
+       "E004": {"name": "Dave", "department": "Sales", "position": "Salesperson", "projects": []}
    }
    ```
 
