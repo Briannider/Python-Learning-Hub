@@ -6,7 +6,7 @@ The **apis** folder contains examples of how to interact with various APIs using
 
 - **REST APIs**: Working with RESTful services like fetching data, posting new information, and handling authentication.
 - **Web Scraping**: Extracting data from websites using libraries such as `requests` and `BeautifulSoup`.
-- **Third-Party APIs**: Examples of connecting to popular APIs like Twitter, OpenWeather, and Google Maps.
+- **Third-Party APIs**: Examples of connecting to popular APIs like Twitter, OpenWeather, and Google Maps or like this case Pokemon API.
 
 ## How to Use
 
