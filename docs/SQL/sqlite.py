@@ -64,5 +64,6 @@ res.fetchone()
 for row in res:
     print(row)
 
+# something I don't understand goes here
 
 con.close()
