@@ -3,9 +3,12 @@ __author__ = "Briannider"
 import random
 from team import Team
 
-# Example list of 50 football team names (real + invented)
-teams_name = [
-    # Premier League / real clubs
+#!Constants
+MAX_POINTS = 20
+
+# * Example list of 50 football team names (real + invented)
+champions_league_teams = [
+    #!REAL
     "Manchester United",
     "Manchester City",
     "Liverpool",
@@ -26,7 +29,7 @@ teams_name = [
     "Leicester City",
     "Leeds United",
     "Southampton",
-    # Invented but realistic
+    #!INVENTED
     "Iron Valley Rovers",
     "Silverlake United",
     "Highland Warriors",
@@ -47,7 +50,6 @@ teams_name = [
     "Lakeshore Giants",
     "Midtown Chargers",
     "Westbridge Stallions",
-    # Extra invented to reach 50
     "Harborview Sharks",
     "Pinehill Bears",
     "Silverpeak Dragons",
@@ -73,10 +75,60 @@ def manual_loading(n):
 
 def automatic_loading(n):
     v = [None] * n
-    random.shuffle(teams_name)
+    random.shuffle(champions_league_teams)
     for i in range(n):
-        team_name = teams_name[i]
-        points = random.randint(0, 20)
+        team_name = champions_league_teams[i]
+        points = random.randint(0, MAX_POINTS)
         goals = random.randint(0, 100)
         v[i] = Team(team_name, points, goals)
     return v
+
+
+def clasification_order(v, option):  # Asc = 0 || Dsc = 1
+    """
+    Sorts a list of Team objects by points using bubble sort.
+
+    Args:
+        v (list): List of Team objects.
+        option (int): Sorting option.
+            - 0: Ascending order.
+            - 1: Descending order.
+
+    Returns:
+        list: The sorted list of Team objects.
+    """
+    n = len(v)
+
+    # Define the comparison function once
+    if option == 0:
+
+        def compare(a, b):
+            return a.points > b.points
+    elif option == 1:
+
+        def compare(a, b):
+            return a.points < b.points
+    else:
+        raise ValueError("Invalid option. Use 0 for Asc or 1 for Desc.")
+
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if compare(v[j], v[j + 1]):
+                v[j], v[j + 1] = v[j + 1], v[j]
+
+    return v
+
+
+def generate_table(v):
+    return [
+        [v[i].goals if j == v[i].points else 0 for j in range(MAX_POINTS)]
+        for i in range(len(v))
+    ]
+
+
+def show_table(v):
+    print("CLASIFICATION TABLE")
+    for i in range(len(v)):
+        for j in i:
+            print(f"{v[j]}")
+            print(f"{v[i]}")
