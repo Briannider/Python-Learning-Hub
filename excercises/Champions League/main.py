@@ -35,6 +35,7 @@ def main():
             print(teams[i])
     else:
         print("Invalid option.")
+    show_table(teams)
 
 
 main()

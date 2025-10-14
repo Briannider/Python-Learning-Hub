@@ -119,16 +119,29 @@ def clasification_order(v, option):  # Asc = 0 || Dsc = 1
     return v
 
 
-def generate_table(v):
-    return [
-        [v[i].goals if j == v[i].points else 0 for j in range(MAX_POINTS)]
-        for i in range(len(v))
+def generate_table(teams):
+    return [[team.team_name, team.points, team.goals] for team in teams]
+
+
+def show_table(teams):
+    headers = ["Equipo", "Puntos", "Goles"]
+    rows = generate_table(teams)
+
+    # Calcula el ancho de cada columna (incluye encabezados)
+    col_widths = [
+        max(len(str(cell)) for cell in column) for column in zip(*([headers] + rows))
     ]
 
+    # Función para imprimir una fila con alineación
+    def print_row(row):
+        print(
+            " | ".join(str(cell).ljust(width) for cell, width in zip(row, col_widths))
+        )
 
-def show_table(v):
-    print("CLASIFICATION TABLE")
-    for i in range(len(v)):
-        for j in i:
-            print(f"{v[j]}")
-            print(f"{v[i]}")
+    # Imprime encabezado y separador
+    print_row(headers)
+    print("-+-".join("-" * width for width in col_widths))
+
+    # Imprime cada fila de datos
+    for row in rows:
+        print_row(row)
