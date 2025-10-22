@@ -1,6 +1,5 @@
 from functions import (
     clasification_order,
-    generate_table,
     manual_loading,
     automatic_loading,
     show_table,
